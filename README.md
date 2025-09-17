@@ -1,5 +1,7 @@
 # Groundwater Data Natural Language to SQL System
 
+> **Development Branch**: This is the `dev` branch with the latest features and improvements.
+
 An end-to-end system that enables natural language queries on groundwater data, converts them to SQL, and returns results in a user-friendly interface.
 
 ## Features
