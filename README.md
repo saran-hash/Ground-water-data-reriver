@@ -38,7 +38,14 @@ An end-to-end system that enables natural language queries on groundwater data, 
    pip install -r requirements.txt
    ```
 
-3. Run the application:
+3. Initialize the database:
+   ```
+   python init_db.py
+   ```
+   
+   Note: This step requires the `cleaned_groundwater_data_final.csv` file to be present in your project directory.
+
+4. Run the application:
    ```
    python main.py
    ```

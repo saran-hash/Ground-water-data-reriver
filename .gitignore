@@ -57,7 +57,7 @@ coverage.xml
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# Data files
+# Data files (will be added separately)
 *.csv
 *.xlsx
 *.xls
@@ -65,9 +65,8 @@ coverage.xml
 # Model cache
 models/
 
-# Database
-# Uncomment the next line if you don't want to include the database in the repo
-# *.db
+# Database (will be added separately)
+*.db
 
 # OS specific
 .DS_Store
