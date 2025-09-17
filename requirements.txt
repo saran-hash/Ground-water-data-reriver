@@ -1,0 +1,22 @@
+# API and Web Framework
+fastapi
+uvicorn
+python-dotenv
+
+# Database
+sqlite3
+
+# Data Processing
+pandas
+numpy
+
+# Web UI
+streamlit
+
+# NL to SQL Model
+transformers
+torch
+accelerate
+
+# HTTP Client for API requests
+requests

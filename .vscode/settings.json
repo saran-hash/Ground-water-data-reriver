@@ -1,0 +1,8 @@
+{
+  "terminal.integrated.env.windows": {
+    "VIRTUAL_ENV": "${workspaceFolder}\\.venv",
+    "PATH": "${workspaceFolder}\\.venv\\Scripts;${env:PATH}",
+    "PYTHONPATH": "${workspaceFolder}"
+  },
+  "python.terminal.activateEnvironment": true
+}
