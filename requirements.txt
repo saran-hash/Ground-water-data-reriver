@@ -9,6 +9,7 @@ sqlite3
 # Data Processing
 pandas
 numpy
+openpyxl  # For Excel file support
 
 # Web UI
 streamlit
