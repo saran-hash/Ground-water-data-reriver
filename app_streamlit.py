@@ -13,13 +13,18 @@ debug_mode = st.checkbox("Show debugging info (model vs rule-based)")
 if st.button("Submit") and question:
     with st.spinner("Generating SQL and fetching results..."):
         try:
+            # Initialize resp variable before using it
+            resp = None
+            # Make the API request
             resp = requests.post(f"{BACKEND_URL}/nl2sql", params={
                 "question": question,
                 "debug": debug_mode
             })
             result = resp.json()
         except Exception as e:
-            st.error(f"Error decoding backend response: {e}\nRaw response: {getattr(resp, 'text', '')}")
+            # Safe access to resp.text if resp is defined
+            raw_response = getattr(resp, 'text', 'No response') if resp else 'No response'
+            st.error(f"Error connecting to backend: {e}\nRaw response: {raw_response}")
             result = {}
         
         # Extract results
